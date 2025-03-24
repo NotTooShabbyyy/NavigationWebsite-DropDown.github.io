@@ -216,7 +216,7 @@ p {
 }
 
 .backed-by {
-    height: 16px;
+    height: 10.6px;
 }
 
 .content-left header {
@@ -242,12 +242,16 @@ p {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    column-gap: 58px;
+    column-gap: 59px;
     row-gap: 0;
     height: 100%;
 }
 
 .backed-by img {
-    height: 24px; 
-    width: 60.2px;
+    height: 19px;
+} 
+
+
+.backed-by > ul > li:first-child img {
+    height: 14px;
 }
