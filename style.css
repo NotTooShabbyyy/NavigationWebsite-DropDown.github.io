@@ -34,18 +34,31 @@ nav > ul {
 #nav-rightside {
     display: flex;
     align-items: center;
-    column-gap: 13px;
+    column-gap: 0;
+    text-align: center;
 }
 
-#nav-rightside li:last-child {
-    border: 2px solid black;
+#nav-rightside li {
     padding: 10px 14px;
+    margin-left: 16px;
+}
+
+#nav-rightside li:hover {
+    outline: 2px solid black;
     border-radius: 14px;
 }
+
+
 
 nav li {
     margin-left: 34px;
 }
+
+nav li:hover {
+    cursor: pointer;
+}
+
+
 
 #logo {
     font-weight: bold;
@@ -132,11 +145,11 @@ body {
 }
 
 button {
-    width: 132px;
+    width: 124px;
     height: 42px;
     background-color: black;
     color: white;
-    border-radius: 10px;
+    border-radius: 9.1px;
     letter-spacing: 0.5px;
 }   
 
@@ -180,13 +193,13 @@ p {
 }
 
 .content-section {
-    height: 540px;
-    width: 410px;
+    height: 560px;
+    width: 430px;
 }
 
 .content-left {
     width: 600px;
-    padding-top: 90px;
+    padding-top: 110px;
     padding-left: 65px;
     padding-right: 100px;
 }
@@ -199,11 +212,11 @@ p {
 }
 
 .content-info button {
-  font-size: 16px;
+  font-size: 14.6px;
 }
 
 .backed-by {
-    height: 17px;
+    height: 16px;
 }
 
 .content-left header {
@@ -213,6 +226,7 @@ p {
 
 .content-left header span {
     display: block;
+    margin-bottom: 5px;
 }
 
 .content-right img {
