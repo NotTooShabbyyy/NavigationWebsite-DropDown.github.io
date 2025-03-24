@@ -14,7 +14,7 @@ html, body {
 }
 
 nav {
-    padding: 30px 40px;
+    padding: 26px 30px;
     display: flex;
 } 
 
@@ -34,6 +34,13 @@ nav > ul {
 #nav-rightside {
     display: flex;
     align-items: center;
+    column-gap: 13px;
+}
+
+#nav-rightside li:last-child {
+    border: 2px solid black;
+    padding: 10px 14px;
+    border-radius: 14px;
 }
 
 nav li {
@@ -179,7 +186,7 @@ p {
 
 .content-left {
     width: 600px;
-    padding-top: 62px;
+    padding-top: 90px;
     padding-left: 65px;
     padding-right: 100px;
 }
@@ -196,7 +203,7 @@ p {
 }
 
 .backed-by {
-    height: 40px;
+    height: 17px;
 }
 
 .content-left header {
