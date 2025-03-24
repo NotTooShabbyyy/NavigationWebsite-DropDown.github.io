@@ -14,44 +14,57 @@ html, body {
 }
 
 nav {
+    padding: 30px 40px;
     display: flex;
-   
-    padding: 22px 40px;
-}
+} 
 
 nav > ul {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    
+    height: 50px;
+    align-items: center;
 }
 
-nav > ul li {
-    display: inline-block;
+#nav-leftside {
+    display: flex;
+    align-items:center
+}
+
+#nav-rightside {
+    display: flex;
+    align-items: center;
 }
 
 nav li {
-    margin-left: 16px;
+    margin-left: 34px;
 }
-
 
 #logo {
     font-weight: bold;
-    margin-right: 26px;
+    margin-right: 32px;
     margin-left: 0;
+    font-size: 34px;
+    padding: 0;
+    
 }
 
+
 .hover-menu {
-    display: visible;
     position: absolute;
-    padding-left: 20px;
-    padding-top: 20px;
+    padding-left: 5px;
+    padding-top: 24px;
     padding-bottom: 20px;
     background-color: white;
     text-align: center;
     border-radius: 20px;
-    padding-right: 20px;
+    padding-right: 5px; 
     display: none;
+}
+
+
+.hoverToggleLink {
+    display: block;
 }
 
 .hover-menu li {
@@ -71,19 +84,33 @@ nav li {
 }
 
 .hover-menu:first-of-type {
-    left: 130px;
-    top: 54px;
+    left: 95px;
+    top: 75px;
 
 }
 
 .hover-menu:last-of-type {
-    left: 220px;
-    top: 54px;
-
+    left: 280px;
+    top: 80px;
+    padding-right: 24px;
 }
 
 .hover-menu span {
     width: 100px;
+}
+
+.hover-link:hover {
+    cursor: pointer;
+}
+
+.hover-link img {
+    margin-left: 8px;
+    vertical-align: center;
+}
+
+
+.container {
+    font-family: "Epilogue", sans-serif;
 }
 
 
@@ -94,45 +121,91 @@ nav li {
 body {
     background-color: hsl(0, 0%, 98%);
     font-size: 15px;
+    font-family: "Epilogue", sans-serif;  
 }
 
 button {
-    width: 115px;
-    height: 45px;
+    width: 132px;
+    height: 42px;
     background-color: black;
     color: white;
-    border-radius: 8px;
+    border-radius: 10px;
+    letter-spacing: 0.5px;
+}   
+
+button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
 }
 
+h1 {
+    font-size: 74px;
+    line-height: 3.9rem;
+}
+
+p {
+    color: hsl(0, 0%, 8%);
+    font-size: 18px;
+    line-height: 1.8rem;
+    font-weight: 500;
+}
+
+
+
+.content-info > p {
+    margin-bottom: -30px;
+}
 /* Content section */
+
+
+
+.container {
+    min-width: 1440px;
+}
 
 
 .content-container {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 70px;
+    column-gap: 110px;
 }
 
 .content-section {
-    height: 620px;
-    width: 470px;
+    height: 540px;
+    width: 410px;
 }
 
 .content-left {
-    display: flex;
-    flex-direction: column;
-    row-gap: 50px;
-    width: 590px;
-    justify-content: space-between;
-    outline: 4px solid cyan;
-    padding-top: 110px;
+    width: 600px;
+    padding-top: 62px;
+    padding-left: 65px;
+    padding-right: 100px;
 }
 
 .content-info {
     display: flex;
-    flex-direction: column;
-    outline: 2px solid red;
-    row-gap: 120px;
+    flex-direction: column;  
+    row-gap: 80px;
+    height: 100%;  
+}
+
+.content-info button {
+  font-size: 16px;
+}
+
+.backed-by {
+    height: 40px;
+}
+
+.content-left header {
+    margin-bottom: 50px;
+    width: 900px;
+}
+
+.content-left header span {
+    display: block;
 }
 
 .content-right img {
@@ -140,13 +213,20 @@ button {
     height: 100%;
 }
 
+.backed-by {
+   gap: 0;
+}
+
 .backed-by > ul {
     display: flex;
     justify-content: flex-start;
-    column-gap: 46px;
+    align-items: flex-end;
+    column-gap: 58px;
+    row-gap: 0;
+    height: 100%;
 }
 
 .backed-by img {
-    height: 23px; 
-    width: 46px;
+    height: 24px; 
+    width: 60.2px;
 }
